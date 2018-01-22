@@ -126,6 +126,13 @@ It is possible to override CN with an environment variable:
 
     make PASSWORD=bunnies CN=secure.mydomain.local
 
+### Overriding Root CA CN (Common Name)
+
+By default, root certificate's CN ([Common Name](http://tldp.org/HOWTO/Apache-WebDAV-LDAP-HOWTO/glossary.html)) is `TLSGenSelfSignedtRootCA`.
+
+It is possible to override CN with an environment variable:
+
+    make PASSWORD=bunnies CN=secure.mydomain.local ROOT_CN=DevCARoot
 
 ### Overriding Number of Private Key Bits
 
